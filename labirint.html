@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Game</title>
+  <style>
+    #gameCanvas {
+      display: none; /* Скрываем canvas до начала игры */
+      border: 1px solid black;
+      background-color: lightgray;
+    }
+    #startScreen {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Стартовый экран -->
+  <div id="startScreen">
+    <img id="logo" src="trans_bg.png">
+    <h1>Лабиринт</h1>
+    <input type="text" id="playerNameInput" placeholder="Введите имя">
+    <button id="startButton">Старт</button>
+    <button id="leaderboardButton">Таблица лидеров</button>
+  </div>
+
+  <!-- Канвас для игры -->
+  <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+  <script src="mazeGame.js"></script>
+</body>
+</html>
